@@ -1,0 +1,195 @@
+#banner2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.box_top{
+    width: 50%;
+    height: 55px;
+    border: 1px solid white;
+    box-shadow: 0 0 5px 0 #909090;
+    color: white;
+    display: flex;
+    align-items: center; 
+    padding-left: 10px;
+    letter-spacing:1px;
+    background-color: rgba(24,24,24,0.8)
+}
+.emoji{
+    width: 50%;
+    height: 248px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.emoji1{
+    width: 200px;
+    height : 222px;
+    border: 1px solid white;
+    box-shadow: 0 0 5px 0 #909090;
+    background-color: rgba(24,24,24,0.8);
+    cursor:pointer;
+}
+.emoji1:hover{
+    background-color: rgba(231,76,60,1);
+}
+.emojitop{
+    width: 100%;
+    height: 85%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 150px;
+}
+.emojibottom{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    position: relative;
+    bottom: 10px;
+    font-size: 20px;
+}
+.next{
+    width: 50%;
+    height: 45px;
+    background-color: rgba(231,76,60,1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 22px;
+    text-decoration: none;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.next div{
+    text-align: center;
+}
+
+.back{
+    width: 50%;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    margin-top: 20px;
+}
+.occasion{
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-top: 30px;
+    font-size: small;
+}
+.occasion1{
+    width: 100%;
+    height: 45px;
+    border: 1px solid white;
+    box-shadow: 0 0 5px 0 #909090;
+    background-color: rgba(24,24,24,0.8);
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    cursor: pointer;
+}
+.occasion1 input{
+    width: 20px;
+    height: 20px;
+    border: none;
+    outline: none;
+}
+.occasion1:hover{
+    background-color: rgba(231,76,60,1);
+}
+.oc_tex{
+    color: white;
+    margin-left: 20px;
+    font-size: larger;
+}
+.uls{
+    height: 591px;
+    width: 48%;
+    border: 1px solid white;
+}
+.occasions{
+    width: 50%;
+    height: 600px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+.occasions li{
+    border: 1px solid white;
+    height: 45px;
+    width: 310px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    font-size: small;
+    cursor: pointer;
+}
+.occasions li:hover{
+    background-color: rgba(231,76,60,1);
+}
+.occasions li input{
+    width: 20px;
+    height: 20px;
+}
+.occasions li span {
+    color: white;
+    margin-left: 15px;
+    font-size: 20px;
+}
+#banner22{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10%;
+    margin-bottom: 15%;
+}
+#topss{
+    width: 50%;
+    MIN-height: 65px;
+    border: 1px solid white;
+    box-shadow: 0 0 5px 0 #909090;
+    color: white;
+    display: flex;
+    align-items: center; 
+    padding-left: 10px;
+    letter-spacing:1px;
+    background-color: rgba(24,24,24,0.8)
+}
+.next2{
+    min-height: 45px;
+    margin-top: 30px;
+}
+.okkkk{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.oks{
+    min-height: 60px;
+}
+.hu{
+    min-height: 45px;
+}
+  
+.emoji1.selected {
+    background-color: rgba(231, 76, 60, 1); 
+}

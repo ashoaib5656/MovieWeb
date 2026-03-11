@@ -1,0 +1,260 @@
+.production-footer {
+  background: #000;
+  color: #ffffff;
+  padding: 30px 0 20px;
+  font-family: 'Inter', sans-serif;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.footer-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+/* Top Row: Brand & Newsletter */
+.footer-top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 80px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.footer-logo {
+  font-size: 2.2rem;
+  font-weight: 900;
+  letter-spacing: -2px;
+  margin-bottom: 8px;
+}
+
+.footer-logo span {
+  color: #e74c3c;
+}
+
+.brand-tagline {
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  color: rgba(255, 255, 255, 0.3);
+  text-transform: uppercase;
+}
+
+.newsletter-wrap p {
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  color: #fff;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  text-align: right;
+}
+
+.newsletter-input-group {
+  display: flex;
+  background: rgba(255, 255, 255, 0.03);
+  padding: 3px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  width: 350px;
+}
+
+.newsletter-input-group input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  padding: 0 15px;
+  font-family: inherit;
+  font-size: 0.9rem;
+}
+
+.join-btn {
+  background: #e74c3c;
+  color: #fff;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 8px;
+  font-weight: 800;
+  font-size: 0.75rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 0px !important;
+}
+
+.join-btn:hover {
+  background: #ff7675;
+}
+
+/* Main Grid */
+.footer-main-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 0.8fr 0.8fr;
+  gap: 80px;
+  margin-bottom: 80px;
+}
+
+.col-title {
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: #e74c3c;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.info-col p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 20px;
+}
+
+/* Feature List */
+.footer-feature-list {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-feature-list li {
+  position: relative;
+  padding-left: 20px;
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 12px;
+  line-height: 1.4;
+}
+
+.footer-feature-list li::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: #e74c3c;
+  font-weight: 900;
+}
+
+/* Simple List */
+.footer-simple-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.footer-simple-list a {
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+}
+
+.footer-simple-list a:hover {
+  color: #fff;
+}
+
+/* Social Col */
+.footer-social-links {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.s-icon {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+}
+
+.s-icon i {
+  font-size: 1.1rem;
+  width: 20px;
+  text-align: center;
+}
+
+.s-icon:hover {
+  color: #e74c3c;
+  transform: translateX(5px);
+}
+
+/* Stats Strip */
+.footer-stats-strip {
+  display: flex;
+  gap: 60px;
+  padding: 40px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.stat-pill-elite {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.s-val {
+  font-size: 1.6rem;
+  font-weight: 950;
+  color: #e74c3c;
+}
+
+.s-label {
+  font-size: 0.75rem;
+  font-weight: 850;
+  letter-spacing: 2px;
+  color: rgba(255, 255, 255, 0.2);
+}
+
+/* Bottom Bar */
+.footer-bottom-bar {
+  padding-top: 30px;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  text-align: center;
+}
+
+.copy-text {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: rgba(255, 255, 255, 0.15);
+}
+
+@media (max-width: 1200px) {
+  .footer-main-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 60px 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-top-row {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .newsletter-input-group {
+    width: 100%;
+  }
+
+  .newsletter-wrap p {
+    text-align: center;
+  }
+
+  .footer-main-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .footer-stats-strip {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+}

@@ -1,0 +1,309 @@
+.hero-page {
+  background: #000;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.hero-main-container {
+  width: 100%;
+}
+
+/* Split Layout Section */
+.hero-split-section {
+  position: relative;
+  min-height: calc(100vh - 80px); /* Adjust for sticky header */
+  display: flex;
+  align-items: center;
+}
+
+.hero-container-elite {
+  max-width: 1400px; /* Increased from 1300px */
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 40px;
+  display: grid;
+  grid-template-columns: 1fr 1.2fr; /* Swapped to give image more space */
+  gap: 40px;
+  align-items: center;
+}
+
+/* Left Column: Text Content */
+.hero-text-side {
+  text-align: left;
+  animation: eliteFadeInLeft 1s cubic-bezier(0.19, 1, 0.22, 1);
+  padding-bottom: 110px;
+}
+
+.hero-badge {
+  display: inline-block;
+  padding: 6px 16px;
+  background: rgba(231, 76, 60, 0.1);
+  border: 1px solid rgba(231, 76, 60, 0.2);
+  color: #e74c3c;
+  border-radius: 100px;
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin-bottom: 25px;
+}
+
+.hero-title-elite {
+  font-family: 'Inter', sans-serif;
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  font-weight: 900;
+  color: #ffffff;
+  margin-bottom: 20px;
+  letter-spacing: -2px;
+  line-height: 1.1;
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, #e74c3c 0%, #ff7675 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero-description-elite {
+  font-family: 'Inter', sans-serif;
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  color: rgba(255, 255, 255, 0.5);
+  line-height: 1.8;
+  margin-bottom: 40px;
+  max-width: 600px;
+}
+
+.hero-action-group {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.hero-nav-link {
+  text-decoration: none;
+}
+
+.primary-button-elite {
+  background: #e74c3c;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 800;
+  padding: 16px 36px;
+  border-radius: 14px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: 0 10px 30px rgba(231, 76, 60, 0.25);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.primary-button-elite:hover {
+  transform: translateY(-3px);
+  background: #ff7675;
+  box-shadow: 0 15px 40px rgba(231, 76, 60, 0.4);
+}
+
+.secondary-button-elite {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 16px 32px;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.secondary-button-elite:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Right Column: Hero Image */
+.hero-image-side {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: eliteFadeInRight 1s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.hero-main-image-wrap {
+  position: relative;
+  width: 100%;
+  max-width: 750px; /* Increased from 600px */
+  border-radius: 40px;
+  overflow: hidden;
+  /* Removed border and shadow for seamless blend */
+}
+
+.hero-main-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: opacity 0.6s ease; /* Removed scale from transition */
+  mask-image: linear-gradient(to right, transparent 0%, black 30%);
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 30%);
+}
+
+/* Removed hero-main-image-wrap:hover .hero-main-image */
+
+.hero-image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, #000 0%, transparent 40%);
+  z-index: 2;
+}
+
+/* Floating Elements */
+.floating-card {
+  position: absolute;
+  padding: 8px 14px;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.75rem;
+  z-index: 10;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+}
+
+.rating-card {
+  top: 15%;
+  right: 10px;
+  animation: floating 3s ease-in-out infinite;
+}
+
+.rating-card i { color: #f1c40f; }
+
+.stream-card {
+  bottom: 25%;
+  left: 10px;
+  animation: floating 3s ease-in-out infinite 0.5s;
+}
+
+.stream-card i { color: #e74c3c; }
+
+/* Video Section */
+.hero-video-section {
+  padding: 100px 20px 140px;
+  background: #000;
+}
+
+.section-header-elite {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.section-title-elite {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+.section-line {
+  width: 80px;
+  height: 4px;
+  background: #e74c3c;
+  margin: 0 auto;
+  border-radius: 100px;
+}
+
+.video-container-elite {
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.video-inner {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: #000;
+  box-shadow: 0 50px 100px rgba(0, 0, 0, 0.8);
+}
+
+.video-inner iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Animations */
+@keyframes eliteFadeInLeft {
+  from { opacity: 0; transform: translateX(-40px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes eliteFadeInRight {
+  from { opacity: 0; transform: translateX(40px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes floating {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .hero-container-elite {
+    grid-template-columns: 1fr;
+    gap: 80px;
+    text-align: center;
+  }
+  
+  .hero-text-side {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .hero-description-elite {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-action-group {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .primary-button-elite, .secondary-button-elite {
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .hero-title-elite {
+    font-size: 2.8rem;
+  }
+  
+  .hero-main-image-wrap {
+    max-width: 400px;
+  }
+}
