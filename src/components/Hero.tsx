@@ -30,7 +30,7 @@ const Hero = () => {
                 Don't settle for average entertainment. Our advanced recommendation engine transforms your preferences into a personalized cinematic roadmap.
               </p>
               <div className="hero-action-group">
-                <NavLink to="/question1" className="hero-nav-link">
+                <NavLink to="/discovery/1" className="hero-nav-link">
                   <button className="primary-button-elite">
                     <span>Start Discovery</span>
                     <i className="fa-solid fa-play"></i>

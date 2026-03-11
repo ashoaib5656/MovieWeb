@@ -86,7 +86,7 @@ const Footer = () => {
 
         {/* Bottom Bar */}
         <div className="footer-bottom-bar">
-          <p className="copy-text">© {new Date().getFullYear()} MOVIEGEN. ALL RIGHTS RESERVED.</p>
+          <p className="copy-text">© {new Date().getFullYear()} MOVIE SECTION. ALL RIGHTS RESERVED.</p>
         </div>
       </div>
     </footer>

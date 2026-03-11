@@ -69,3 +69,113 @@ export const BLOG_POSTS = [
     comments: 89
   }
 ];
+
+export interface QuestionOption {
+    id: string;
+    label: string;
+    icon?: string;
+}
+
+export interface Question {
+    id: number;
+    text: string;
+    type: "emoji" | "single" | "multiple";
+    options: QuestionOption[];
+    videoUrl: string;
+}
+
+export const QUESTION_DATA: Question[] = [
+    {
+        id: 1,
+        text: "How are you today?",
+        type: "emoji",
+        videoUrl: "https://www.youtube.com/embed/HihakYi5M2I?si=bTNNc2vxl7Vhgrzc",
+        options: [
+            { id: "happy", label: "Happy", icon: "fa-face-smile" },
+            { id: "neutral", label: "Neutral", icon: "fa-face-meh" },
+            { id: "sad", label: "Sad", icon: "fa-face-frown-open" }
+        ]
+    },
+    {
+        id: 2,
+        text: "What comes closest to your occasion?",
+        type: "single",
+        videoUrl: "https://www.youtube.com/embed/HihakYi5M2I?si=bTNNc2vxl7Vhgrzc",
+        options: [
+            { id: "justWatching", label: "Just Watching Movie by Myself" },
+            { id: "movieDate", label: "Movie Date" },
+            { id: "dateNight", label: "Date Night With Boyfriend or Girlfriend" },
+            { id: "movieNight", label: "Movie Night With Friends" },
+            { id: "familyMovieNight", label: "Watching Movie With Family" }
+        ]
+    },
+    {
+        id: 3,
+        text: "Please choose any genre you’re interested in.",
+        type: "multiple",
+        videoUrl: "https://www.youtube.com/embed/vYL2wfmF3OQ?si=Pss_-qLH8pnCiZO-",
+        options: [
+            { id: "Action", label: "Action" },
+            { id: "Mystery", label: "Mystery" },
+            { id: "Comedy", label: "Comedy" },
+            { id: "Biography", label: "Biography" },
+            { id: "Drama", label: "Drama" },
+            { id: "History", label: "History" },
+            { id: "Adventure", label: "Adventure" },
+            { id: "Animation", label: "Animation" },
+            { id: "Thriller", label: "Thriller" },
+            { id: "Crime", label: "Crime" },
+            { id: "Sport", label: "Sport" },
+            { id: "Romance", label: "Romance" },
+            { id: "Disaster", label: "Disaster" },
+            { id: "Science Fiction", label: "Science Fiction" },
+            { id: "Western", label: "Western" },
+            { id: "Fantasy", label: "Fantasy" },
+            { id: "War", label: "War" },
+            { id: "Family", label: "Family" },
+            { id: "Horrer", label: "Horrer" }
+        ]
+    },
+    {
+        id: 4,
+        text: "Is the age-appropriateness rating of the movie important to you?",
+        type: "single",
+        videoUrl: "https://www.youtube.com/embed/HihakYi5M2I?si=bTNNc2vxl7Vhgrzc",
+        options: [
+            { id: "Yes", label: "Yes, I would like to choose the ratings that I’m okay with." },
+            { id: "No", label: "No, it doesn’t matter." }
+        ]
+    },
+    {
+        id: 5,
+        text: "How Old would you like the movie to be?",
+        type: "single",
+        videoUrl: "https://www.youtube.com/embed/HihakYi5M2I?si=bTNNc2vxl7Vhgrzc",
+        options: [
+            { id: "Doesn't Matter", label: "Doesn't Matter" },
+            { id: "Published in Last 3 Years", label: "Published in Last 3 Years" },
+            { id: "Published in Last 5 Years", label: "Published in Last 5 Years" },
+            { id: "Published in Last 10 Years", label: "Published in Last 10 Years" },
+            { id: "Published in Last 15 Years", label: "Published in Last 15 Years" }
+        ]
+    },
+    {
+        id: 6,
+        text: "Please select any other category you’re interested in.",
+        type: "single",
+        videoUrl: "https://www.youtube.com/embed/HihakYi5M2I?si=bTNNc2vxl7Vhgrzc",
+        options: [
+            { id: "none", label: "I don’t have a preference." },
+            { id: "trueStory", label: "Movies based on a true story" },
+            { id: "lifeChanging", label: "Movies that may change the way you look at life" },
+            { id: "nyc", label: "Movies set in New York City" },
+            { id: "spy", label: "Spy Movies and Cop Movies" },
+            { id: "space", label: "Space Movies" },
+            { id: "wedding", label: "Wedding Movies" },
+            { id: "heist", label: "Heist Movies" },
+            { id: "book", label: "Movies based on a book" },
+            { id: "racing", label: "Racing Movies" },
+            { id: "girlPower", label: "Girl Power Movies" }
+        ]
+    }
+];
